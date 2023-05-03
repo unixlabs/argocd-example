@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: storage
+  namespace: project1
+spec:
+  type: ClusterIP
+  ports:
+  - name: storage
+    port: 80
+    protocol: TCP
+    targetPort: 80
