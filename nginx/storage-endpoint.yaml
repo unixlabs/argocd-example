@@ -12,7 +12,7 @@ addressType: IPv4
 ports:
   - name: '' storage # empty because port 9376 is not assigned as a well-known
              # port (by IANA)
-  - appProtocol: http
+    appProtocol: http
     protocol: TCP
     port: 80
 endpoints:
