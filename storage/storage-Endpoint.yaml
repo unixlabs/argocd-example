@@ -1,0 +1,25 @@
+---
+apiVersion: discovery.k8s.io/v1
+kind: EndpointSlice
+metadata:
+  name: storage # by convention, use the name of the Service
+                     # as a prefix for the name of the EndpointSlice
+  labels:
+    # You should set the "kubernetes.io/service-name" label.
+    # Set its value to match the name of the Service
+    kubernetes.io/service-name: storage
+addressType: IPv4
+ports:
+  - name: '' # empty because port 9376 is not assigned as a well-known
+             # port (by IANA)
+    appProtocol: http
+    protocol: TCP
+    port: 80
+endpoints:
+  - addresses:
+#    - "10.3.8.95"
+    - "10.3.8.95" # the IP addresses in this list can appear in any order
+
+#      - "10.3.8.99"
+    conditions:
+      ready: true
