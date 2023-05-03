@@ -7,6 +7,6 @@ spec:
   type: ClusterIP
   ports:
   - name: 
-    port: 80
+    port: storage
     protocol: TCP
     targetPort: 80
