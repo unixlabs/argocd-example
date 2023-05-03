@@ -10,4 +10,4 @@ spec:
   - name: storage
     port: 80
     protocol: TCP
-    targetPort: 80
+    targetPort: storage
