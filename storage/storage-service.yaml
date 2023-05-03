@@ -9,4 +9,4 @@ spec:
   - name: abc123
     port: 80
     protocol: TCP
-    targetPort: http
+    targetPort: abc123
