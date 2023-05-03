@@ -6,7 +6,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - name: HTTP
+  - name: adil
     port: 80
     protocol: TCP
     targetPort: 80
