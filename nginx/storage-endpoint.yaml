@@ -14,7 +14,7 @@ ports:
              # port (by IANA)
     appProtocol: http
     protocol: TCP
-    port: storage
+    port: 80
 endpoints:
   - addresses:
 #    - "10.3.8.95"
@@ -23,3 +23,7 @@ endpoints:
 #      - "10.3.8.99"
     conditions:
       ready: true
+selector:
+    app: storage
+      
+      
