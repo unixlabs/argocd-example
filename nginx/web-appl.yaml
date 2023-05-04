@@ -14,4 +14,4 @@ spec:
       protocol: TCP
 
   selector:
-    app: nginx
+    app: web-app
