@@ -1,11 +1,9 @@
-#05-ALB-Ingress-Basic.yml
-# Annotations Reference:  https://kubernetes-sigs.github.io/aws-alb-ingress-controller/guide/ingress/annotation/
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: ingress-usermgmt-restapp-service
+  name: ingress
   labels:
-    app: usermgmt-restapp
+    app: nginx
   annotations:
     # Ingress Core Settings
     kubernetes.io/ingress.class: "alb"
@@ -25,5 +23,5 @@ spec:
         paths:
           - path: /*
             backend:
-              serviceName: usermgmt-restapp-nodeport-service
-              servicePort: 8095
+              serviceName: nginx
+              servicePort: 80
