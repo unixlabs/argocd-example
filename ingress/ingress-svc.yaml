@@ -4,7 +4,6 @@ kind: Service
 
 metadata:
   name: nginx
-  namespace: project1
 
 spec:
   type: LoadBalancer
