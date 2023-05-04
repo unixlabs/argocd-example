@@ -10,7 +10,7 @@ metadata:
     kubernetes.io/service-name: storage
 addressType: IPv4
 ports:
-  - name: http # empty because port 9376 is not assigned as a well-known
+  - name: storage # empty because port 9376 is not assigned as a well-known
              # port (by IANA)
     appProtocol: http
     protocol: TCP
